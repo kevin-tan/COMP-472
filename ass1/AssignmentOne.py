@@ -106,12 +106,18 @@ from sklearn.model_selection import GridSearchCV
 
 def find_best_dt_with_params(train_X, train_Y):
     base_classifier = DecisionTreeClassifier()
+    # params_grid = {
+    #     'criterion': ['gini', 'entropy'],
+    #     'max_depth': [None, 3, 5, 10],
+    #     'min_samples_split': [10, 25, 50, 75],
+    #     'min_impurity_decrease': [0.0, 0.1, 0.2, 0.3],
+    #     'class_weight': [None, 'balanced']
+    # }
     params_grid = {
-        'criterion': ['gini', 'entropy'],
-        'max_depth': [None, 3, 5, 10],
-        'min_samples_split': [10, 25, 50, 75],
-        'min_impurity_decrease': [0.0, 0.1, 0.2, 0.3],
-        'class_weight': [None, 'balanced']
+        "criterion": ["gini", "entropy"],
+        "max_depth": [None, 1, 3, 4, 5, 6, 7, 8, 9, 10],
+        "class_weight": [None, "balanced"],
+        "splitter": ["best", "random"]
     }
     grid_search = GridSearchCV(base_classifier, param_grid=params_grid, cv=5).fit(train_X, train_Y)
     return grid_search.best_estimator_
