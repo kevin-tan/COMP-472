@@ -1,0 +1,32 @@
+
+Algorithm: depth_first_search
+Total time: 46.24498500000001 Time average: 2.3122492500000003
+Total cost: 3597160 Cost average: 179858.0
+Total result path length: 3597160 Result path length average: 179858.0
+Search result path length: 3703028 Search path length average: 185151.4
+Total solution: 20
+Total no solution: 0
+
+Algorithm: iterative_deepening_search
+Total time: 409.20521400000007 Time average: 22.733623000000005
+Total cost: 275 Cost average: 15.277777777777779
+Total result path length: 275 Result path length average: 15.277777777777779
+Search result path length: 14827796 Search path length average: 823766.4444444445
+Total solution: 18
+Total no solution: 2
+
+Algorithm: a_star_search_h1
+Total time: 0.11070199999999998 Time average: 0.005535099999999999
+Total cost: 2743.0 Cost average: 137.15
+Total result path length: 208 Result path length average: 10.4
+Search result path length: 368 Search path length average: 18.4
+Total solution: 20
+Total no solution: 0
+
+Algorithm: a_star_search_h2
+Total time: 221.31034500000004 Time average: 11.065517250000003
+Total cost: 1298.3333333333335 Cost average: 64.91666666666667
+Total result path length: 198 Result path length average: 9.9
+Search result path length: 1110834 Search path length average: 55541.7
+Total solution: 20
+Total no solution: 0
